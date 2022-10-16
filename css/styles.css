@@ -210,6 +210,7 @@ header .icons #menu-bars{
 }
 
 .shop-item-image {
+    border-radius: 15px 50px 30px;
     height: 300px;
     width: 300px;
 }
