@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-
 :root{
     --green:#27ae60;
     --black:#192a56;
@@ -21,7 +20,6 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    font-size: 100%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
@@ -31,7 +29,7 @@ html, body {
 header{
     position: fixed;
     top:0; left: 0; right:0;
-    background: #fff;
+    background: #eee;
     padding:1rem 7%;
     display: flex;
     align-items: center;
@@ -88,40 +86,6 @@ header .icons #menu-bars{
     display: none;
 }
 
-.main-header {
-    background-color: rgba(0, 0, 0, .6);    
-    background-blend-mode: multiply;
-    background-size: cover;
-    padding-bottom: 30px;
-}
-
-.band-name {
-    text-align: center;
-    margin: 0;
-    font-size: 4em;
-    font-family: "Booter - Zero Zero";
-    font-weight: normal;
-    color: white;
-}
-
-.band-name-large {
-    font-size: 8em;
-}
-
-.content-section {
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    margin: 1em;
-}
-
-/*.container .content-section{
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-}*/
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.5em;
-}
 .section-header {
     font-family: "Metal Mania";
     font-weight: normal;
@@ -222,10 +186,13 @@ header .icons #menu-bars{
     background-color: #8b5349;
 }
 
-.shop-item {    
-    
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    margin: 30px;
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1.5em;
 }
 
 .shop-item-title {
@@ -234,12 +201,15 @@ header .icons #menu-bars{
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    color: #333;
+    color: #192a56;
     margin-bottom: 15px;
 }
 
+.shop-item {
+    margin: 30px;
+}
+
 .shop-item-image {
-    border-radius: 15px 50px 30px;
     height: 300px;
     width: 300px;
 }
@@ -252,15 +222,14 @@ header .icons #menu-bars{
 
 .shop-item-price {
     flex-grow: 1;
-    color: #333;
+    color: #192a56;
 }
 
 .shop-items {
-    display: flex;        
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
@@ -277,6 +246,7 @@ header .icons #menu-bars{
 }
 
 .cart-row {
+    max-width: 900px;
     display: flex;
 }
 
@@ -342,7 +312,7 @@ header .icons #menu-bars{
 .cart-total {
     text-align: end;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 35%;
 }
 
 .cart-total-title {
@@ -356,6 +326,7 @@ header .icons #menu-bars{
     color: #333;
     font-size: 1.1em;
 }
+
 
 .btn-purchase {
     display: block;
@@ -382,4 +353,7 @@ header .icons #menu-bars{
 .loader-container.fade-out{
     top:-110%;
     opacity:0;
+}
+#G1 #G3{
+    
 }

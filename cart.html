@@ -13,23 +13,16 @@
     <body>
         <header>
 
-            <a href="#" class="logo">Batavia Resturant</a>
+            <a href="index.html" class="logo">Batavia Resturant</a>
         
             <nav class="navbar">
                 <a href="index.html">home</a>
                 <a class="active"  href="cart.html">order</a>
-            </nav>
-        
-            <div class="icons">
-                <i class="fas fa-bars" id="menu-bars"></i>
-                <i class="fas fa-search" id="search-icon"></i>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="cart.html" class="fas fa-shopping-cart"></a>
-            </div>
-        
-        </header>
-        <h2 class="section-header" style="padding-top: 9rem;text-align: left;margin-left: 9rem;">Main Course</h2>
-        <section class="container content-section" >
+            </nav>        
+        </header><Br>
+        <h2 class="section-header" style="text-align: left;margin-left: 9rem;color:#192a56">Main Course</h2>
+        <section class="container content-section">
+            <h2 class="section-header" style="padding-top: 9rem;text-align: left;margin-left: 9rem;">Main Course</h2>
             <div class="shop-items">
                 <div class="shop-item">
                     <span class="category" style="font-size:0px;">Main Course</span>
@@ -170,7 +163,7 @@
                 <div class="shop-item">
                     <span class="category" style="font-size:0px;">Desserts</span>
                     <span class="shop-item-title">Banana Spring Rolls</span>
-                    <img class="shop-item-image" src="images/brownie.png">
+                    <img class="shop-item-image" src="images/springroll.jpg">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$5.99</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
@@ -230,7 +223,7 @@
         </section>
         <h2 class="section-header">Address Information</h2>
         <section class="container content-section">
-            <center><table id="order"></center>
+            <center><table id="order">
                 <tr>
                     <td>Name</td>
                     <td><input type=name  class="reset" id="name"></td>
@@ -260,9 +253,10 @@
                     <td><input type="checkbox" checked="true" disabled>Cash Only</td>
                     
                 </tr>
-            </table>
+            </table></center>
+        </section>
             <h2 class="section-header">CART</h2>
-            <div class="cart-row">
+            <center><div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
                 <span class="category cart-header cart-column">Category</span>
@@ -274,8 +268,7 @@
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">$0</span>
             </div>
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-        </section>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button></center>
         <hr>
         <section class="footer">
             <div class="box-container">        
